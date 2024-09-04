@@ -1,18 +1,18 @@
-function f() {
+async function getData() {
+    let response;
   try {
-    alert("start");
-    throw new Error("an error");
-  } catch (err) {
-    // ...
-    if ("can't handle the error") {
-      throw err;
-    }
+   response = await fetch("./data.json");
+  } catch (error) {
+    console.log("ERROR: ", error);
+  }
+
+  if (response?.ok) {
+    const data = await response.json();
+    data.forEach((element) => {
+      console.log(element.timeframes.daily.current);
+    });
+  } else {
+    console.log(`HTTP Response Code: ${response?.status}`);
   }
 }
-
-f();
-alert("cleanup!");
-
-//FETCH API AND PROMISES LEARNING IN BACKGROUND
-
-//ASYNC/AWAIT COURSE MAKING 
+getData();
