@@ -1,18 +1,4 @@
-async function getData() {
-    let response;
-  try {
-   response = await fetch("./data.json");
-  } catch (error) {
-    console.log("ERROR: ", error);
-  }
+import { Card } from "./components/card-items/Card.js";
 
-  if (response?.ok) {
-    const data = await response.json();
-    data.forEach((element) => {
-      console.log(element.timeframes.daily.current);
-    });
-  } else {
-    console.log(`HTTP Response Code: ${response?.status}`);
-  }
-}
-getData();
+
+customElements.define("card-items", Card);

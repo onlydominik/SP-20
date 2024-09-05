@@ -1,5 +1,6 @@
 [
   {
+    "bgcolor": "hsl(15, 100%, 70%)",
     "title": "Work",
     "timeframes": {
       "daily": {
@@ -17,6 +18,7 @@
     }
   },
   {
+    "bgcolor": "hsl(195, 74%, 62%)",
     "title": "Play",
     "timeframes": {
       "daily": {
@@ -34,6 +36,7 @@
     }
   },
   {
+    "bgcolor": "hsl(348, 100%, 68%)",
     "title": "Study",
     "timeframes": {
       "daily": {
@@ -51,6 +54,7 @@
     }
   },
   {
+    "bgcolor": "hsl(145, 58%, 55%)",
     "title": "Exercise",
     "timeframes": {
       "daily": {
@@ -68,6 +72,7 @@
     }
   },
   {
+    "bgcolor": "hsl(264, 64%, 52%)",
     "title": "Social",
     "timeframes": {
       "daily": {
@@ -85,6 +90,7 @@
     }
   },
   {
+    "bgcolor": "hsl(43, 84%, 65%)",
     "title": "Self Care",
     "timeframes": {
       "daily": {

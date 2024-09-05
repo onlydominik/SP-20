@@ -1,0 +1,22 @@
+$colors: (
+  "white": (
+    100: hsl(0, 0%, 100%),
+    200: hsl(0, 0%, 94%),
+    300: hsl(236, 100%, 87%),
+    400: hsl(0, 1%, 44%),
+    500: hsl(0, 0%, 8%),
+  ),
+  "primary": (
+    "background": hsl(226, 43%, 10%),
+    "card-background": hsl(235, 46%, 20%),
+    "black": hsl(0, 0%, 8%),
+  ),
+);
+
+:root {
+  @each $category, $subcategory in $colors {
+    @each $name, $value in $subcategory {
+      --clr-#{$category}-#{$name}: #{$value};
+    }
+  }
+}
