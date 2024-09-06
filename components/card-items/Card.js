@@ -53,7 +53,7 @@ export class Card extends HTMLElement {
 
       <div class="card__title">
         <h2>${data.title}</h2>
-        <img src="/images/icon-ellipsis.svg" alt="">
+        <img src="./images/icon-ellipsis.svg" alt="">
       </div>
       <div class="card__stats">
         <h3>${data.timeframes[dataId].current}hrs</h3>
