@@ -15,7 +15,7 @@ export class Card extends HTMLElement {
   }
 
   render(template) {
-    this.shadowRoot.innerHTML = `<link rel="stylesheet" href="/dist/card-items.css"></link>`;
+    this.shadowRoot.innerHTML = `<link rel="stylesheet" href="./dist/card-items.css"></link>`;
     this.shadowRoot.innerHTML += template;
     if (currentInputChecked)
       this.shadowRoot.querySelector(`#${currentInputChecked}`).checked = true;
@@ -45,7 +45,7 @@ export class Card extends HTMLElement {
       .map((data) => {
         return `
 <div>
-    <div style="background: url(/images/icon-${
+    <div style="background: url(./images/icon-${
           data.title.split(" ")[0]
         }.svg) no-repeat right 1rem center,
       ${data.bgcolor};" class="card-img"></div>
@@ -69,7 +69,7 @@ export class Card extends HTMLElement {
     let profileCard = `
     <div class="profile-card">
     <div class="profile-card__descr">
-      <img src="/images/image-jeremy.png" alt="Jeremy face picture">
+      <img src="./images/image-jeremy.png" alt="Jeremy face picture">
       <div>
         <p>Report for</p>
         <h1>Jeremy Robson</h1>
