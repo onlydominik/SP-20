@@ -13,7 +13,7 @@ export class Card extends HTMLElement {
       currentInputChecked = e.target.id;
     });
   }
-
+//RENDER
   render(template) {
     this.shadowRoot.innerHTML = `<link rel="stylesheet" href="./dist/card-items.css"></link>`;
     this.shadowRoot.innerHTML += template;
